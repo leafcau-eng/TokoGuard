@@ -70,6 +70,7 @@ export default function DashboardPage() {
 
       <div className="bg-white border border-[#DADBDD] rounded-xl p-4">
         <div className="text-[12px] text-[#5B5F66] mb-2">Recent critical findings</div>
+        <a href="/anomaly-center" className="text-[12px] text-[#2454E8] block mb-2">Lihat semua anomaly →</a>
         {criticalFindings.map(a => (
           <Link
             key={a.id}

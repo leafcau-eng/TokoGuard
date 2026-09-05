@@ -38,6 +38,9 @@ export interface BehavioralAnomaly extends AnomalyCommon {
 export interface InsufficientAnomaly extends AnomalyCommon {
   type: 'insufficient';
   severity: null;
+  // Slot severity ini WOULD BE ditempatkan di tab mana, murni buat navigasi/filter UI.
+  // Bukan klaim severity asli -- itu justru yang gak bisa ditentukan.
+  tabSeverity: Severity;
   gapNote: string;
   sourceAvail: string;
   calcAttempt: string;
